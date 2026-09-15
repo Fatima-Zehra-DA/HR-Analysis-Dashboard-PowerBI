@@ -104,3 +104,16 @@ Dashboard Design
       ↓
 HR Analytics Dashboard
 ```
+------------------------------------------------------------------------
+
+## 🧹 Data Cleaning & Transformation
+
+The following preparation steps were performed using **Power Query**:
+
+-   Imported HR data into Power BI.
+-   Inspected the dataset structure and fields.
+-   Removed null values where appropriate.
+-   Removed duplicate records.
+-   Fixed inconsistent text values.
+-   Transformed fields into suitable formats for analysis.
+-   Prepared the cleaned data for visualization and DAX calculations.
