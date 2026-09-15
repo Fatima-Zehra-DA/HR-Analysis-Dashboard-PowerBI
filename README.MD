@@ -13,3 +13,36 @@ job-related factors are associated with attrition**.
 
 This project analyzes an HR dataset to transform raw employee records
 into an interactive dashboard that helps explore:
+
+
+-   Overall employee attrition
+-   Attrition across departments
+-   Attrition by salary slab
+-   Attrition across job roles and job satisfaction levels
+-   Attrition trends by employee experience
+-   Employee distribution across departments
+-   Attrition by age group
+-   Attrition by gender
+-   Overall workforce and attrition KPIs
+
+The goal of the project is to demonstrate a complete **data preparation
+→ data modeling → DAX → visualization → dashboard development** workflow
+in Power BI.
+
+------------------------------------------------------------------------
+
+## 🎯 Project Objectives
+
+The main objectives of this project are to:
+
+1.  Prepare and clean the HR dataset for analysis.
+2.  Remove duplicate and incomplete records where appropriate.
+3.  Standardize inconsistent text values.
+4.  Create calculated fields and DAX measures required for analysis.
+5.  Calculate employee attrition metrics.
+6.  Analyze attrition across different employee dimensions.
+7.  Build an interactive and easy-to-read HR dashboard.
+8.  Present HR metrics and patterns through business-focused
+    visualizations.
+
+------------------------------------------------------------------------
