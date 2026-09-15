@@ -223,3 +223,25 @@ The dashboard includes slicers for:
 
 These allow users to explore the dashboard from different employee
 segments.
+
+---
+## 💡 Key Dashboard Observations
+
+Based on the current dashboard:
+
+-   The prepared dataset contains **1,417 employees** represented in the
+    dashboard.
+-   **231 employees** are recorded as having left the organization.
+-   The overall **attrition rate is 16.3%**.
+-   The dashboard reports an **average employee age of 36.94 years**.
+-   The reported **average experience is 7.04 years**.
+-   Attrition is analyzed across multiple dimensions rather than being
+    viewed only as an overall percentage.
+-   The dashboard allows department and age-group filtering for more
+    focused analysis.
+
+These observations describe the dashboard results; they should not be
+interpreted as evidence that a particular factor directly causes
+attrition.
+
+---
