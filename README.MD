@@ -156,14 +156,14 @@ DIVIDE(
 
 The dashboard currently presents the following key metrics:
 
-  KPI                         Value
-  -------------------- ------------
-  Total Employees             1,417
-  Active Employees            1,186
-  Attrition Count               231
-  Attrition Rate              16.3%
-  Average Age                 36.94
-  Average Experience     7.04 years
+  KPI                  |       Value
+  -------------------- |-----------
+  Total Employees      |      1,417
+  Active Employees     |      1,186
+  Attrition Count      |        231
+  Attrition Rate       |      16.3%
+  Average Age          |      36.94
+  Average Experience   | 7.04 years
 
 These KPIs provide a high-level overview of the workforce and employee
 attrition.
