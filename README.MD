@@ -169,3 +169,57 @@ These KPIs provide a high-level overview of the workforce and employee
 attrition.
 
 ---
+
+## 📊 Dashboard Analysis
+
+The dashboard includes the following analysis areas:
+
+### 1. Attrition by Department
+
+Shows how the 231 attrition cases are distributed across departments
+such as Administration, Sales, Operations, IT, Marketing, Human
+Resources, and Finance.
+
+### 2. Attrition by Salary Slab
+
+Compares attrition counts across different salary ranges to identify how
+employee exits are distributed by salary level.
+
+### 3. Attrition by Job Role & Job Satisfaction
+
+Examines attrition across job roles and job satisfaction scores to
+provide a more detailed view of employee exits.
+
+### 4. Attrition Trend by Experience
+
+Visualizes attrition across years of employee experience to identify
+where attrition cases are concentrated along the experience range.
+
+### 5. Department-wise Employee Count
+
+Shows the distribution of employees across departments and provides
+context for comparing department-level attrition.
+
+### 6. Attrition by Age Group
+
+Breaks down attrition counts across age groups:
+
+-   18--25
+-   26--35
+-   36--45
+-   46--55
+-   55+
+
+### 7. Attrition by Gender
+
+Shows the distribution of attrition cases by gender.
+
+### 8. Interactive Filtering
+
+The dashboard includes slicers for:
+
+-   Age Group
+-   Department
+
+These allow users to explore the dashboard from different employee
+segments.
