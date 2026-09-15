@@ -61,3 +61,46 @@ transformation steps.
 > data-preparation process.
 
 ---
+
+
+## 🛠️ Tools & Technologies
+
+-   **Microsoft Power BI**
+-   **Power Query**
+-   **DAX**
+-   **Data Visualization**
+-   **Data Cleaning & Transformation**
+
+------------------------------------------------------------------------
+
+## 🔄 Project Workflow
+
+``` text
+Raw HR Dataset
+      ↓
+Import Data into Power BI
+      ↓
+Data Inspection
+      ↓
+Data Cleaning with Power Query
+      ↓
+Handle Null Values
+      ↓
+Remove Duplicate Records
+      ↓
+Standardize Text Values
+      ↓
+Data Transformation
+      ↓
+Create Calculated Column & DAX Measures
+      ↓
+Build KPI Cards
+      ↓
+Create Interactive Visualizations
+      ↓
+Add Slicers & Filters
+      ↓
+Dashboard Design
+      ↓
+HR Analytics Dashboard
+```
