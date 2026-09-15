@@ -4,6 +4,10 @@ An end-to-end HR data analysis project built with **Microsoft Power
 BI**, **Power Query**, and **DAX** to analyze employee attrition and
 workforce patterns through an interactive HR dashboard.
 
+## Project Status
+🚧 In Progress
+
+
 ## 📌 Problem Overview
 
 Employee attrition can affect workforce stability, recruitment
