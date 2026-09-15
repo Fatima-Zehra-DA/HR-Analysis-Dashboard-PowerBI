@@ -117,3 +117,38 @@ The following preparation steps were performed using **Power Query**:
 -   Fixed inconsistent text values.
 -   Transformed fields into suitable formats for analysis.
 -   Prepared the cleaned data for visualization and DAX calculations.
+
+---
+
+## 🧮 DAX & Calculated Fields
+
+DAX was used to create metrics required for the dashboard.
+
+### Attrition Count
+
+A calculated column was created to identify employee attrition:
+
+``` dax
+Attrition Count =
+IF(
+    'HR_Analytics-4'[Attrition] = "Yes",
+    1,
+    0
+)
+```
+
+### Attrition Rate %
+
+The dashboard uses an attrition-rate measure to calculate the percentage
+of employees who left the organization:
+
+``` dax
+Attrition Rate % =
+DIVIDE(
+    SUM('HR_Analytics-4'[AttritionCount]),
+    SUM('HR_Analytics-4'[EmployeeCount]),
+    0
+)
+
+```
+---
