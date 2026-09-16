@@ -249,3 +249,17 @@ interpreted as evidence that a particular factor directly causes
 attrition.
 
 ---
+
+## 🎨 Dashboard Features
+
+-   KPI cards for high-level HR metrics
+-   Department-wise attrition donut chart
+-   Salary-slab attrition comparison
+-   Job role and job satisfaction matrix
+-   Experience-based attrition trend
+-   Department-wise employee count
+-   Age-group attrition analysis
+-   Gender-based attrition analysis
+-   Interactive Age Group slicer
+-   Interactive Department slicer
+-   Consistent dashboard layout and visual hierarchy
