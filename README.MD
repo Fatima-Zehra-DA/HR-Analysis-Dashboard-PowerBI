@@ -269,3 +269,25 @@ attrition.
 ## 🖼️ Dashboard Preview
 
 ![HR Analytics Dashboard](Asserts/Dashboard.png)
+
+---
+
+
+## 📁 Suggested Repository Structure
+
+``` text
+HR-Analytics-PowerBI/
+│
+├── Data/
+│   └── HR_Analytics_Data.csv
+│
+├── Asserts/
+│   └── Dashboard.png
+│   └── icons (All icons)
+│
+├── PowerBI/
+│   └── HR Analytics Dashboard.pbix
+│
+├── README.md
+└── .gitignore
+```
