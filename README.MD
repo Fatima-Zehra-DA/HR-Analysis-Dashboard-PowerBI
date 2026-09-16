@@ -324,4 +324,18 @@ This project demonstrates practical skills in:
 6.  Explore the visuals to analyze employee attrition patterns.
  ---
 
- 
+ ## 📚 What I Learned
+
+Through this project, I practiced the complete Power BI analysis
+workflow, including:
+
+-   Preparing raw HR data for analysis
+-   Using Power Query for data cleaning and transformation
+-   Creating calculated columns and DAX measures
+-   Designing KPI cards
+-   Selecting appropriate visuals for different analytical questions
+-   Building interactive slicers
+-   Structuring a professional dashboard
+-   Communicating analytical results through visual storytelling
+
+---
