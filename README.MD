@@ -263,3 +263,15 @@ attrition.
 -   Interactive Age Group slicer
 -   Interactive Department slicer
 -   Consistent dashboard layout and visual hierarchy
+
+---
+
+## 🖼️ Dashboard Preview
+
+Add your exported dashboard image to the repository and update the
+filename below if necessary:
+
+``` markdown
+![HR Analytics Dashboard](Assert/Dashboard.png)
+```
+---
