@@ -268,10 +268,4 @@ attrition.
 
 ## 🖼️ Dashboard Preview
 
-Add your exported dashboard image to the repository and update the
-filename below if necessary:
-
-``` markdown
-![HR Analytics Dashboard](Assert/Dashboard.png)
-```
----
+![HR Analytics Dashboard](Asserts/Dashboard.png)
