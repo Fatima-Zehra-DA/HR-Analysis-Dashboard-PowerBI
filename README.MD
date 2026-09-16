@@ -312,3 +312,16 @@ This project demonstrates practical skills in:
 -   Business-focused Data Analysis
 
 ---
+
+## 🚀 How to Use the Dashboard
+
+1.  Download or clone this repository.
+2.  Open the `.pbix` file in **Power BI Desktop**.
+3.  Review the data model and Power Query transformations.
+4.  Navigate to the dashboard page.
+5.  Use the **Age Group** and **Department** slicers to interact with
+    the report.
+6.  Explore the visuals to analyze employee attrition patterns.
+ ---
+
+ 
