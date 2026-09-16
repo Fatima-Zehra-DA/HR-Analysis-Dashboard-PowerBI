@@ -291,3 +291,24 @@ HR-Analytics-PowerBI/
 ├── README.md
 └── .gitignore
 ```
+---
+
+
+## 🔍 Skills Demonstrated
+
+This project demonstrates practical skills in:
+
+-   Power BI
+-   Power Query
+-   DAX
+-   Data Cleaning
+-   Data Transformation
+-   Data Modeling
+-   KPI Development
+-   Data Visualization
+-   Dashboard Design
+-   Interactive Reporting
+-   HR Analytics
+-   Business-focused Data Analysis
+
+---
