@@ -339,3 +339,35 @@ workflow, including:
 -   Communicating analytical results through visual storytelling
 
 ---
+
+## 👤 About the Project
+
+This project was created as part of my data analytics portfolio to
+strengthen my practical experience with **Power BI, Power Query, DAX,
+and HR analytics**.
+
+The project focuses on demonstrating the analytical workflow and
+dashboard-building process rather than making causal claims about
+employee attrition.
+
+---
+
+## ⭐ Feedback
+
+Feedback on the dashboard design, DAX calculations, analytical approach,
+and areas for deeper HR analysis is welcome.
+
+## 👩‍💻 Author
+
+**Fatima Zehra**
+
+Aspiring Data Analyst focused on transforming data into meaningful business insights.
+
+
+## Connect with me
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Fatima_Zehra-brightgreen)](https://github.com/Fatima-Zehra-DA)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/fatima-zehra-308b85358/)
+[![Tableau](https://img.shields.io/badge/Tableau-Public-orange)](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-cyan)](https://www.kaggle.com/fatimazehra2305/)
+[![Gmail](https://img.shields.io/badge/Gmail-Email-red)](mailto:fatimazehra2305@gmail.com)
