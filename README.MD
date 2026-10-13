@@ -201,15 +201,10 @@ The preparation workflow included:
 * Removing two duplicate rows identified during the initial data-quality review.
 * Investigating employee identifiers associated with conflicting records.
 
-### Data Quality Considerations
+### Data Quality Notes
 
-During the audit, I identified 14 employee numbers associated with multiple records containing a value of 2 in `EmpCount`. Further investigation revealed conflicting employee information in some cases, including different salary slabs for employee number 2055 and different manager-tenure values for employee number 1331.
+During data preparation, I identified duplicate records and conflicting employee information. I retained the records for this practice project rather than removing or modifying records without sufficient evidence to determine the correct values. As a result, some employee-level metrics may be affected by these inconsistencies.
 
-This highlighted an important distinction between counting employee records and counting unique employee identifiers.
-
-The report displays 1,417 employee records, while a distinct employee count returns 1,403 identifiers. These figures should not automatically be treated as equivalent to the number of verified unique employees.
-
-Conflicting records require careful validation before they can be consolidated or used to make employee-level conclusions. The displayed attrition metrics should therefore be interpreted in light of the dataset's quality limitations.
 
 ## Technical Approach
 
@@ -279,18 +274,7 @@ Design features include:
 
 The layout is designed to make the report easy to navigate while keeping key metrics and analytical findings visible.
 
-## Limitations and Next Steps
 
-This project is a descriptive analysis of the available dataset. It does not establish causal relationships between employee characteristics and attrition, nor does it independently measure productivity decline.
-
-Potential next steps include:
-
-* Validating conflicting employee records and identifier uniqueness.
-* Comparing attrition across more employee segments while accounting for group sizes.
-* Investigating whether overtime, satisfaction, tenure, and other factors overlap.
-* Reviewing the relationship between promotion timelines, performance ratings, and attrition.
-* Evaluating retention initiatives against defined measures over time.
-* Developing additional analysis once reliable longitudinal HR data becomes available.
 
 ## What I Learned
 
@@ -307,8 +291,8 @@ Through this project, I practiced:
 ## Repository Contents
 
 * `README.md` — project documentation, methods, and findings.
-* `images/` — dashboard screenshots used in this README.
-* `HR_Analysis_Dashboard.pbix` — Power BI report file, if included in the repository.
+* `Asserts/dashboards` — dashboard screenshots used in this README.
+* `Power BI/HR_Analysis.pbix` — Power BI report file, if included in the repository.
 
 ## Conclusion
 
