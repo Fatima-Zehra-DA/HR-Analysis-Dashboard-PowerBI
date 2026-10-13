@@ -1,373 +1,330 @@
-# HR Analytics Dashboard \| Power BI
+# HR Analysis Dashboard | Power BI
 
-An end-to-end HR data analysis project built with **Microsoft Power
-BI**, **Power Query**, and **DAX** to analyze employee attrition and
-workforce patterns through an interactive HR dashboard.
+**Understanding Employee Attrition, Workforce Structure, and Performance Indicators**
 
-## Project Status
-🚧 In Progress
+An HR analytics project developed in Power BI to explore employee attrition patterns, workforce composition, compensation, employee experience, and performance-related indicators.
 
+The objective is to turn HR data into meaningful findings that can help identify employee groups with higher recorded attrition and highlight areas where further investigation or retention initiatives may be valuable.
 
-## 📌 Problem Overview
+## Project Overview
 
-Employee attrition can affect workforce stability, recruitment
-requirements, and organizational planning. HR teams need a clear view of
-**who is leaving, where attrition is concentrated, and which employee or
-job-related factors are associated with attrition**.
+Employee attrition can affect workforce stability, recruitment costs, knowledge retention, and business continuity. Understanding where attrition is concentrated can help HR teams investigate potential risk factors and make more informed decisions.
 
-This project analyzes an HR dataset to transform raw employee records
-into an interactive dashboard that helps explore:
+In this project, I analyzed employee-level HR data and built a four-page Power BI dashboard to examine workforce structure, attrition patterns, performance indicators, and actionable HR insights.
 
+Rather than focusing only on the overall attrition rate, the analysis explores how attrition varies across employee tenure, age groups, overtime status, job satisfaction, work-life balance, and job roles.
 
--   Overall employee attrition
--   Attrition across departments
--   Attrition by salary slab
--   Attrition across job roles and job satisfaction levels
--   Attrition trends by employee experience
--   Employee distribution across departments
--   Attrition by age group
--   Attrition by gender
--   Overall workforce and attrition KPIs
+**Project type:** Exploratory HR Analytics and Business Intelligence
+**Tool:** Microsoft Power BI
+**Core skills:** Data Cleaning, Data Quality Assessment, Data Modeling, DAX, Data Visualization, Exploratory Data Analysis, and Insight Communication
 
-The goal of the project is to demonstrate a complete **data preparation
-→ data modeling → DAX → visualization → dashboard development** workflow
-in Power BI.
+## Business Problem
 
----
+The project focuses on two central business questions:
 
-## 🎯 Project Objectives
+1. **Why are employees leaving?** Identify employee groups with higher recorded attrition and examine how attrition varies across relevant workforce characteristics.
+2. **Where should HR investigate potential performance and retention risks?** Explore performance ratings, job involvement, salary hikes, promotion timelines, and employee experience indicators.
 
-The main objectives of this project are to:
+The analysis is intended to identify patterns and potential areas for further investigation. The observed relationships do not, by themselves, establish the causes of employee attrition or changes in productivity.
 
-1.  Prepare and clean the HR dataset for analysis.
-2.  Remove duplicate and incomplete records where appropriate.
-3.  Standardize inconsistent text values.
-4.  Create calculated fields and DAX measures required for analysis.
-5.  Calculate employee attrition metrics.
-6.  Analyze attrition across different employee dimensions.
-7.  Build an interactive and easy-to-read HR dashboard.
-8.  Present HR metrics and patterns through business-focused
-    visualizations.
+## Project Objectives
 
----
-## 📊 Dataset
+* Understand the overall workforce composition and attrition rate.
+* Compare attrition across departments, job roles, salary slabs, and age groups.
+* Examine attrition patterns by overtime, tenure, job satisfaction, marital status, and gender.
+* Explore performance ratings and employee distribution across work-life balance scores.
+* Review job involvement, salary hike percentages, and time since the last promotion.
+* Translate the findings into practical areas for HR investigation.
+* Build a consistent, interactive, multi-page Power BI report.
 
--   **Dataset:** HR Employee Data
--   **Initial Rows:** 1,481
--   **Columns:** 37
--   **Final employee records represented in the dashboard:** 1,417
+<!-- ## Dashboard Preview -->
 
-The dashboard uses the prepared dataset after the data-cleaning and
-transformation steps.
+<!-- ![HR Analysis Dashboard — All Four Pages](Asserts/dashboards/) -->
 
-> **Note:** The difference between the initial 1,481 rows and the 1,417
-> employee records shown in the dashboard is a result of the
-> data-preparation process.
+*The report contains four pages: HR Executive Overview, Attrition Analysis, Performance & Productivity Risk, and HR Insight & Actions.*
 
----
+## Dashboard Pages
 
+### 1. HR Executive Overview
 
-## 🛠️ Tools & Technologies
+**Subtitle:** Workforce | Attrition | Compensation | Structure
 
--   **Microsoft Power BI**
--   **Power Query**
--   **DAX**
--   **Data Visualization**
--   **Data Cleaning & Transformation**
+This page provides a high-level overview of the workforce and helps users identify where attrition is concentrated.
 
-------------------------------------------------------------------------
+**Key metrics**
 
-## 🔄 Project Workflow
+* Total employee records: 1,417
+* Active employees: 1,186
+* Employees who left: 231
+* Overall attrition rate: 16.3%
+* Average income: 49.82K
+* Average tenure: 7.04 years
 
-``` text
-Raw HR Dataset
-      ↓
-Import Data into Power BI
-      ↓
-Data Inspection
-      ↓
-Data Cleaning with Power Query
-      ↓
-Handle Null Values
-      ↓
-Remove Duplicate Records
-      ↓
-Standardize Text Values
-      ↓
-Data Transformation
-      ↓
-Create Calculated Column & DAX Measures
-      ↓
-Build KPI Cards
-      ↓
-Create Interactive Visualizations
-      ↓
-Add Slicers & Filters
-      ↓
-Dashboard Design
-      ↓
-HR Analytics Dashboard
+**Visualizations**
+
+* Attrition rate by salary slab
+* Attrition rate by department
+* Attrition rate by age group
+* Attrition rate by job role
+* Employee distribution by job level
+
+**Purpose:** Provide a starting point for understanding workforce composition and identifying departments, roles, salary groups, and age groups that warrant closer examination.
+
+![HR Executive Overview](Asserts/dashboards/1.png)
+
+### 2. Attrition Analysis
+
+**Subtitle:** Employee Turnover | Tenure | Satisfaction | Risk
+
+This page examines attrition across employee experience, working conditions, and demographic segments.
+
+**Key metrics**
+
+* Total attrition: 231 employees
+* Overall attrition rate: 16.3%
+* Overtime attrition rate: 31.5%
+* Average tenure at exit: 5.10 years
+
+**Visualizations**
+
+* Attrition rate by overtime status
+* Attrition rate by job satisfaction
+* Attrition rate by tenure group
+* Attrition rate by marital status
+* Attrition rate by gender
+
+**Purpose:** Identify employee groups with higher recorded attrition and explore how turnover patterns differ across working conditions, satisfaction levels, and tenure.
+
+![Attrition Analysis](Asserts/dashboards/2.png)
+
+### 3. Performance & Productivity Risk
+
+**Subtitle:** Performance | Engagement | Salary Hike | Promotion
+
+This page explores performance-related and employee experience indicators to identify areas that may need additional attention.
+
+**Key metrics**
+
+* Average performance rating: 3.15
+* Average salary hike: 15.2%
+* Employees with low job involvement scores (1 or 2): 446
+* Employees with three or more years since their last promotion: 362
+
+**Visualizations**
+
+* Employee distribution by performance rating
+* Average performance rating indicator
+* Average performance rating by department
+* Employee distribution by work-life balance score
+* Employee distribution by years since last promotion
+
+**Purpose:** Review the distribution of performance and engagement indicators, compare department-level averages, and identify employee groups that may benefit from further investigation.
+
+These indicators should be interpreted in context. A high number of employees waiting for a promotion, for example, does not by itself demonstrate that promotion delays are causing attrition or reduced productivity.
+
+![Performance and Productivity Risk](Asserts/dashboards/3.png)
+
+### 4. HR Insight & Actions
+
+**Subtitle:** Key Findings | Risk Indicators | Recommendations
+
+This page brings the analysis together into four insight areas, with findings and suggested HR follow-up actions.
+
+**Insight 1 — Overtime and Attrition**
+
+* Overtime group attrition rate: 31.5%
+* Non-overtime group attrition rate: 10.2%
+
+**Finding:** The recorded attrition rate among employees working overtime is approximately three times the rate among employees not working overtime.
+
+**Suggested action:** Investigate overtime frequency, workload allocation, recovery time, and employee feedback within the affected groups.
+
+**Insight 2 — Overtime and Sales Representative Attrition**
+
+* Sales Representatives working overtime: 43.9%
+* Sales Representatives not working overtime: 18.0%
+* Overall Sales Representative attrition rate: 25.1%
+
+**Finding:** Sales Representatives working overtime have a higher recorded attrition rate than those not working overtime.
+
+**Suggested action:** Examine workload, sales targets, overtime expectations, and team-level working conditions before selecting a retention intervention.
+
+**Insight 3 — Employee Experience**
+
+* Work-life balance score of 1: 31.6% attrition rate
+* Job satisfaction score of 1: 23.0% attrition rate
+
+**Finding:** The lowest recorded work-life balance and job satisfaction scores are associated with higher attrition rates in this dataset.
+
+**Suggested action:** Review employee feedback, scheduling practices, workload conditions, and manager support. Compare these findings with other satisfaction levels before prioritizing interventions.
+
+**Insight 4 — Tenure and Age Group**
+
+* Employees with 0–1 year of tenure: 35.5% attrition rate
+* Employees aged 18–25: 37.6% attrition rate
+
+**Finding:** Early-tenure employees and employees in the youngest age group show higher recorded attrition rates than the overall workforce.
+
+**Suggested action:** Review onboarding, role expectations, early-career development, manager check-ins, and opportunities for new employees to receive support.
+
+**Purpose:** Convert descriptive analysis into specific questions HR can investigate and potential actions that can be evaluated using additional evidence.
+
+![HR Insights and Actions](Asserts/dashboards/4.png)
+
+## Key Findings at a Glance
+
+| Metric or segment                            | Result |
+| -------------------------------------------- | -----: |
+| Overall attrition rate                       |  16.3% |
+| Employees who left                           |    231 |
+| Overtime group attrition rate                |  31.5% |
+| Non-overtime group attrition rate            |  10.2% |
+| Sales Representative attrition rate          |  25.1% |
+| Sales Representatives working overtime       |  43.9% |
+| Attrition rate for 0–1 year tenure           |  35.5% |
+| Attrition rate for ages 18–25                |  37.6% |
+| Attrition rate for work-life balance score 1 |  31.6% |
+| Attrition rate for job satisfaction score 1  |  23.0% |
+
+*Rates represent observed patterns in the analyzed dataset. Differences between groups should not be interpreted as proof of causation.*
+
+## Data Preparation and Quality Assessment
+
+Data preparation and quality checks are important parts of this project because unreliable employee records can affect the interpretation of HR metrics.
+
+The preparation workflow included:
+
+* Inspecting the dataset structure and column types.
+* Reviewing missing values and duplicate records.
+* Removing 61 rows with null values in `YearsWithCurrManager`.
+* Standardizing inconsistent `BusinessTravel` category labels, including `Travel_Rarely` and `TravelRarely`.
+* Removing two duplicate rows identified during the initial data-quality review.
+* Investigating employee identifiers associated with conflicting records.
+
+### Data Quality Considerations
+
+During the audit, I identified 14 employee numbers associated with multiple records containing a value of 2 in `EmpCount`. Further investigation revealed conflicting employee information in some cases, including different salary slabs for employee number 2055 and different manager-tenure values for employee number 1331.
+
+This highlighted an important distinction between counting employee records and counting unique employee identifiers.
+
+The report displays 1,417 employee records, while a distinct employee count returns 1,403 identifiers. These figures should not automatically be treated as equivalent to the number of verified unique employees.
+
+Conflicting records require careful validation before they can be consolidated or used to make employee-level conclusions. The displayed attrition metrics should therefore be interpreted in light of the dataset's quality limitations.
+
+## Technical Approach
+
+### Tools and Technologies
+
+* **Microsoft Power BI Desktop** — report development and visualization
+* **Power Query** — data cleaning, transformation, and standardization
+* **DAX** — KPI calculations and analytical measures
+* **Data visualization** — interactive charts, KPI cards, and report navigation
+* **HR analytics** — workforce segmentation and attrition analysis
+
+### Analysis Workflow
+
+1. **Understand the data:** Review available employee, attrition, compensation, satisfaction, and performance fields.
+2. **Audit data quality:** Check missing values, duplicates, inconsistent categories, and conflicting employee records.
+3. **Prepare the data:** Apply appropriate cleaning and transformation steps in Power Query.
+4. **Define metrics:** Create measures for attrition, workforce counts, and performance indicators.
+5. **Explore patterns:** Compare attrition across employee segments and examine workforce distributions.
+6. **Build the report:** Organize the findings into four dashboards with a consistent visual design.
+7. **Interpret results:** Identify notable patterns, document limitations, and propose areas for HR investigation.
+
+## DAX Measures
+
+The following are examples of the key measures used in the analysis. Adjust the column names if your final Power BI model uses different names.
+
+### 1. Total Attrition
+
+```dax
+Total Attrition =
+SUM(EmpData[Attrition_count])
 ```
-------------------------------------------------------------------------
 
-## 🧹 Data Cleaning & Transformation
+### 2. Attrition Rate
 
-The following preparation steps were performed using **Power Query**:
-
--   Imported HR data into Power BI.
--   Inspected the dataset structure and fields.
--   Removed null values where appropriate.
--   Removed duplicate records.
--   Fixed inconsistent text values.
--   Transformed fields into suitable formats for analysis.
--   Prepared the cleaned data for visualization and DAX calculations.
-
----
-
-## 🧮 DAX & Calculated Fields
-
-DAX was used to create metrics required for the dashboard.
-
-### Attrition Count
-
-A calculated column was created to identify employee attrition:
-
-``` dax
-Attrition Count =
-IF(
-    'HR_Analytics-4'[Attrition] = "Yes",
-    1,
-    0
-)
-```
-
-### Attrition Rate %
-
-The dashboard uses an attrition-rate measure to calculate the percentage
-of employees who left the organization:
-
-``` dax
+```dax
 Attrition Rate % =
 DIVIDE(
-    SUM('HR_Analytics-4'[AttritionCount]),
-    SUM('HR_Analytics-4'[EmployeeCount]),
+    SUM(EmpData[Attrition_count]),
+    SUM(EmpData[EmployeeCount]),
     0
 )
-
 ```
----
-## 📈 Dashboard KPIs
 
-The dashboard currently presents the following key metrics:
+Format this measure as a percentage in Power BI.
 
-  KPI                  |       Value
-  -------------------- |-----------
-  Total Employees      |      1,417
-  Active Employees     |      1,186
-  Attrition Count      |        231
-  Attrition Rate       |      16.3%
-  Average Age          |      36.94
-  Average Experience   | 7.04 years
+### 3. Average Performance Rating
 
-These KPIs provide a high-level overview of the workforce and employee
-attrition.
-
----
-
-## 📊 Dashboard Analysis
-
-The dashboard includes the following analysis areas:
-
-### 1. Attrition by Department
-
-Shows how the 231 attrition cases are distributed across departments
-such as Administration, Sales, Operations, IT, Marketing, Human
-Resources, and Finance.
-
-### 2. Attrition by Salary Slab
-
-Compares attrition counts across different salary ranges to identify how
-employee exits are distributed by salary level.
-
-### 3. Attrition by Job Role & Job Satisfaction
-
-Examines attrition across job roles and job satisfaction scores to
-provide a more detailed view of employee exits.
-
-### 4. Attrition Trend by Experience
-
-Visualizes attrition across years of employee experience to identify
-where attrition cases are concentrated along the experience range.
-
-### 5. Department-wise Employee Count
-
-Shows the distribution of employees across departments and provides
-context for comparing department-level attrition.
-
-### 6. Attrition by Age Group
-
-Breaks down attrition counts across age groups:
-
--   18--25
--   26--35
--   36--45
--   46--55
--   55+
-
-### 7. Attrition by Gender
-
-Shows the distribution of attrition cases by gender.
-
-### 8. Interactive Filtering
-
-The dashboard includes slicers for:
-
--   Age Group
--   Department
-
-These allow users to explore the dashboard from different employee
-segments.
-
----
-## 💡 Key Dashboard Observations
-
-Based on the current dashboard:
-
--   The prepared dataset contains **1,417 employees** represented in the
-    dashboard.
--   **231 employees** are recorded as having left the organization.
--   The overall **attrition rate is 16.3%**.
--   The dashboard reports an **average employee age of 36.94 years**.
--   The reported **average experience is 7.04 years**.
--   Attrition is analyzed across multiple dimensions rather than being
-    viewed only as an overall percentage.
--   The dashboard allows department and age-group filtering for more
-    focused analysis.
-
-These observations describe the dashboard results; they should not be
-interpreted as evidence that a particular factor directly causes
-attrition.
-
----
-
-## 🎨 Dashboard Features
-
--   KPI cards for high-level HR metrics
--   Department-wise attrition donut chart
--   Salary-slab attrition comparison
--   Job role and job satisfaction matrix
--   Experience-based attrition trend
--   Department-wise employee count
--   Age-group attrition analysis
--   Gender-based attrition analysis
--   Interactive Age Group slicer
--   Interactive Department slicer
--   Consistent dashboard layout and visual hierarchy
-
----
-
-## 🖼️ Dashboard Preview
-
-![HR Analytics Dashboard](Asserts/Dashboard.png)
-
----
-
-
-## 📁 Suggested Repository Structure
-
-``` text
-HR-Analytics-PowerBI/
-│
-├── Data/
-│   └── HR_Analytics_Data.csv
-│
-├── Asserts/
-│   └── Dashboard.png
-│   └── icons (All icons)
-│
-├── PowerBI/
-│   └── HR Analytics Dashboard.pbix
-│
-├── README.md
-└── .gitignore
+```dax
+Avg Performance Rating =
+AVERAGE(EmpData[PerformanceRating])
 ```
----
 
+These examples are included to demonstrate the calculation approach. The complete DAX implementation depends on the final model and the measures used for each visual.
 
-## 🔍 Skills Demonstrated
+## Design and Interactivity
 
-This project demonstrates practical skills in:
+The report uses a consistent teal and gold visual theme, with a shared navigation layout across all four pages.
 
--   Power BI
--   Power Query
--   DAX
--   Data Cleaning
--   Data Transformation
--   Data Modeling
--   KPI Development
--   Data Visualization
--   Dashboard Design
--   Interactive Reporting
--   HR Analytics
--   Business-focused Data Analysis
+Design features include:
 
----
+* KPI cards for important workforce metrics.
+* Consistent page navigation.
+* Age-group slicers on relevant pages.
+* Job-role and performance-rating filters on the Performance & Productivity Risk page.
+* Charts for comparing attrition rates and workforce distributions.
+* A dedicated insights page connecting findings with recommended follow-up actions.
 
-## 🚀 How to Use the Dashboard
+The layout is designed to make the report easy to navigate while keeping key metrics and analytical findings visible.
 
-1.  Download or clone this repository.
-2.  Open the `.pbix` file in **Power BI Desktop**.
-3.  Review the data model and Power Query transformations.
-4.  Navigate to the dashboard page.
-5.  Use the **Age Group** and **Department** slicers to interact with
-    the report.
-6.  Explore the visuals to analyze employee attrition patterns.
- ---
+## Limitations and Next Steps
 
- ## 📚 What I Learned
+This project is a descriptive analysis of the available dataset. It does not establish causal relationships between employee characteristics and attrition, nor does it independently measure productivity decline.
 
-Through this project, I practiced the complete Power BI analysis
-workflow, including:
+Potential next steps include:
 
--   Preparing raw HR data for analysis
--   Using Power Query for data cleaning and transformation
--   Creating calculated columns and DAX measures
--   Designing KPI cards
--   Selecting appropriate visuals for different analytical questions
--   Building interactive slicers
--   Structuring a professional dashboard
--   Communicating analytical results through visual storytelling
+* Validating conflicting employee records and identifier uniqueness.
+* Comparing attrition across more employee segments while accounting for group sizes.
+* Investigating whether overtime, satisfaction, tenure, and other factors overlap.
+* Reviewing the relationship between promotion timelines, performance ratings, and attrition.
+* Evaluating retention initiatives against defined measures over time.
+* Developing additional analysis once reliable longitudinal HR data becomes available.
 
----
+## What I Learned
 
-## 👤 About the Project
+Through this project, I practiced:
 
-This project was created as part of my data analytics portfolio to
-strengthen my practical experience with **Power BI, Power Query, DAX,
-and HR analytics**.
+* Preparing HR data in Power Query.
+* Investigating data-quality issues before interpreting results.
+* Building DAX measures for workforce and attrition KPIs.
+* Designing a multi-page Power BI dashboard.
+* Comparing attrition rates across employee segments.
+* Communicating findings without presenting correlations as proven causes.
+* Translating analytical observations into practical questions for business stakeholders.
 
-The project focuses on demonstrating the analytical workflow and
-dashboard-building process rather than making causal claims about
-employee attrition.
+## Repository Contents
 
----
+* `README.md` — project documentation, methods, and findings.
+* `images/` — dashboard screenshots used in this README.
+* `HR_Analysis_Dashboard.pbix` — Power BI report file, if included in the repository.
 
-## ⭐ Feedback
+## Conclusion
 
-Feedback on the dashboard design, DAX calculations, analytical approach,
-and areas for deeper HR analysis is welcome.
+This project demonstrates how HR data can be organized into a structured Power BI report to explore employee attrition, workforce composition, and performance-related indicators.
 
-## 👩‍💻 Author
+The main takeaway is that attrition is not evenly distributed across every employee group. Overtime status, early tenure, work-life balance, job satisfaction, and specific job roles highlight areas that may warrant further investigation.
 
-**Fatima Zehra**
+The dashboard provides a starting point for evidence-based HR discussions, while data validation and additional analysis remain important before making operational decisions.
 
-Aspiring Data Analyst focused on transforming data into meaningful business insights.
+## Connect With Me
 
+I am building my skills in data analytics, business intelligence, and data visualization through practical projects.
 
-## Connect with me
+* **GitHub:** [Fatima-Zehra-DA](https://github.com/Fatima-Zehra-DA)
+* **LinkedIn:** [Fatima Zehra](https://www.linkedin.com/in/fatima-zehra-308b85358/)
+* **Tableau Public:** [My Visualizations](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
+* **Kaggle:** [My Profile](https://www.kaggle.com/fatimazehra2305)
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Fatima_Zehra-brightgreen)](https://github.com/Fatima-Zehra-DA)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/fatima-zehra-308b85358/)
-[![Tableau](https://img.shields.io/badge/Tableau-Public-orange)](https://public.tableau.com/app/profile/fatima.zehra7709/vizzes)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-cyan)](https://www.kaggle.com/fatimazehra2305/)
-[![Gmail](https://img.shields.io/badge/Gmail-Email-red)](mailto:fatimazehra2305@gmail.com)
+Thank you for visiting my project!
